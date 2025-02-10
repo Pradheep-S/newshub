@@ -7,8 +7,8 @@ const BreakingNews = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [noResults, setNoResults] = useState(false); // To track if no results found
 
-    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05';
-    const apiUrl = 'https://your-vercel-backend.vercel.app/news';
+
+    const apiUrl = 'https://newshub-backend.vercel.app/news';
 
 
     // Fetch news articles
