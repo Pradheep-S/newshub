@@ -9,9 +9,9 @@ const Sports = () => {
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
 
-    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05';
-    const apiUrl = `https://newsapi.org/v2/top-headlines?category=sports&apiKey=${apiKey}`; // Changed category to sports
+    const apiUrl = `https://newshub-backend.vercel.app/news?category=$sports`;
 
+    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05'; // News API key
     // Fetch news articles
     useEffect(() => {
         const fetchNews = async (url) => {

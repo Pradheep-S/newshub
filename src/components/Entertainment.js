@@ -8,8 +8,7 @@ const Entertainment = () => {
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
 
-    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05';
-    const apiUrl = `https://newsapi.org/v2/top-headlines?category=entertainment&apiKey=${apiKey}`; // Changed category to entertainment
+    const apiUrl = `https://newshub-backend.vercel.app/news?category=$entertainment`; 
 
     // Fetch news articles
     useEffect(() => {
@@ -37,7 +36,7 @@ const Entertainment = () => {
     const handleSearch = (event) => {
         setSearchQuery(event.target.value);
     };
-
+    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05'; // News API key
     const handleSearchSubmit = async () => {
         const searchUrl = `https://newsapi.org/v2/everything?q=${encodeURIComponent(searchQuery)}&apiKey=${apiKey}`;
         try {

@@ -7,8 +7,8 @@ const Religion = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [noResults, setNoResults] = useState(false);
 
-    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05';
-    const apiUrl = `https://newsapi.org/v2/top-headlines?category=religion&apiKey=${apiKey}`;
+    const apiUrl = `https://newshub-backend.vercel.app/news?category=$religion`;
+
 
     useEffect(() => {
         const fetchNews = async (url) => {

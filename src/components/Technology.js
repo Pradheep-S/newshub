@@ -6,8 +6,7 @@ const Technology = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredNews, setFilteredNews] = useState([]);
 
-    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05'; // News API key
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&pageSize=20&apiKey=${apiKey}`;
+    const apiUrl = `https://newshub-backend.vercel.app/news?category=$technology`;
 
     // Fetch news articles on initial load
     useEffect(() => {

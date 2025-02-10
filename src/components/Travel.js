@@ -8,9 +8,9 @@ const Travel = () => {
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
 
-    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05';
-    const apiUrl = `https://newsapi.org/v2/top-headlines?category=travel&apiKey=${apiKey}`;
+    const apiUrl = `https://newshub-backend.vercel.app/news?category=$travel`;
 
+    const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05'; // News API key
     useEffect(() => {
         const fetchNews = async (url) => {
             try {

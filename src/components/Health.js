@@ -5,9 +5,8 @@ const Health = () => {
     const [loading, setLoading] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredNews, setFilteredNews] = useState([]);
-
+    const apiUrl = `https://newshub-backend.vercel.app/news?category=$health`;
     const apiKey = 'a96d9eb6b93f46bc9313947bebf9bd05'; // News API key
-    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=health&pageSize=20&apiKey=${apiKey}`;
 
     // Fetch news articles on initial load
     useEffect(() => {
